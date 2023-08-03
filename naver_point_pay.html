@@ -58,21 +58,12 @@
         <button type="button" id="point_all_btn">전액사용</button>
     </div>
     <script>
-        /*         let total = 1000
-                reset.style.display='none'
-                userPoint.value = total.toLocaleString('ko-kr')
-                allBtn.addEventListener('click',function(){
-                    reset.style.display='inline'
-                    userPoint.value = 0
-                    usePoint.value = total.toLocaleString('ko-kr')
-                })
-                reset.addEventListener('click',function(){
-                }) */
         let userPoint = document.querySelector('#user_point')
         let usePoint = document.querySelector('#use_point')
         const allBtn = document.querySelector('#point_all_btn')
         const reset = document.querySelector('#point_reset')
         let user = 1000
+        console.log(usePoint,userPoint,allBtn,reset,user)
         userPoint.value=user.toLocaleString('ko-kr')
         reset.style.display='none'
         allBtn.addEventListener('click',function(){
